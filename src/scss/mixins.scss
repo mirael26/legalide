@@ -1,0 +1,109 @@
+@mixin nav-text {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+@mixin nav-text-mobile {
+  @include nav-text;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+@mixin promo-title-text {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 58px;
+  line-height: 65px;
+  letter-spacing: 0.2px;
+}
+
+@mixin promo-title-text-mobile {
+  font-family: 'Martel', Georgia, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+}
+
+@mixin promo-text {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+}
+
+@mixin button-text {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+
+@mixin h2 {
+  font-family: 'Martel', Georgia, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+}
+
+@mixin h3 {
+  font-family: 'Martel', Georgia, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+
+@mixin text {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+@mixin strong-text {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+@mixin subscribe-title-text {
+  font-family: 'Martel', Georgia, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+}
+
+@mixin subscribe-text {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+
+@mixin footer-link-text {
+  @include nav-text;
+}
