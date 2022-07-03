@@ -1,15 +1,22 @@
 .button {
   @include button-text;
   padding: 10px 36px;
-}
 
-.button--rounded {
-  border-radius: 37px;
-  color: $brown;
-  border: 1px solid $brown;
-}
+  &--rounded {
+    border-radius: 37px;
+    color: $brown;
+    border: 1px solid $brown;
+  }
 
-.button--filled {
-  color: white;
-  background-color: $brown;
+  &--square {
+    padding: 10px 20px;
+    color: $gold;
+    border: 1px solid $gold;
+    border-radius: 5px;
+  }
+
+    &--filled {
+    color: white;
+    background-color: $brown;
+  }
 }

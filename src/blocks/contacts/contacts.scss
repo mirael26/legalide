@@ -1,0 +1,129 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  background-color: #F3F3F3;
+}
+
+.contacts__title {
+  @include h2;
+  margin-bottom: 10px;
+  color: $indigo;
+}
+
+.contacts__text {
+  @include text;
+  max-width: 44%;
+  margin-bottom: 110px;
+  text-align: center;
+  color: $grey;
+}
+
+.contacts__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 185px;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 328px;
+  padding: 137px 10px 50px;
+  color: $indigo;
+  background-color: white;
+  background-position: center 50px;
+  background-repeat: no-repeat;
+  background-size: 72px 72px;
+
+  &--phone {
+    background-image: url('../../img/phone-icon.svg')
+  }
+
+  &--address {
+    background-image: url('../../img/map-point-icon.svg')
+  }
+
+  &--mail {
+    background-image: url('../../img/mail-icon.svg')
+  }
+
+  &:nth-child(2) {
+    position: relative;
+    color: white;
+    background-color: $indigo;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      width: 100%;
+      height: 30px;
+      background-color: $indigo;
+    }
+
+    &::before {
+      top: -30px;
+    }
+
+    &::after {
+      bottom: -30px;
+    }
+  }
+}
+
+.contacts__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts__contact-text {
+  @include strong-text;
+
+  &:last-child {
+    margin-bottom: 15px;
+  }
+}
+
+.contacts__subtitle {
+  @include h3;
+  margin-bottom: 15px;
+}
+
+.contacts__button {
+  margin-top: auto;
+}
+
+.contacts__consultation {
+  width: 100%;
+  background-color: white;
+}
+
+.contacts__consultation-wrapper {
+  display: flex;
+  padding: 40px 136px 40px 0;
+}
+
+.contacts__consultation-text-block {
+  margin-right: auto;
+}
+
+.contacts__consultation-title {
+  @include subscribe-title-text;
+  display: block;
+  margin-bottom: 10px;
+  color: $indigo;
+}
+
+.contacts__consultation-text {
+  @include text;
+  color: $grey;
+}
+
+.contacts__consultation-button {
+  padding: 15px 40px;
+}
