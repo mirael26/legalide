@@ -1,0 +1,41 @@
+.partners {
+  position: relative;
+  padding: 51px 0 20px;
+  background-color: #FAFAFA;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 100%;
+    height: 77px;
+    background-color: $indigo;
+  }
+}
+
+.partners__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partners__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 71px;
+}
+
+.partners__logo {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.partners__subscribe {
+  z-index: 1;
+}
