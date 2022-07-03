@@ -1,6 +1,19 @@
 .promo {
   position: relative;
   padding: 154px 0;
+
+  &::after {
+    content: "";
+    width: 565px;
+    height: 646px;
+    position: absolute;
+    bottom: 0px;
+    right: -28px;
+    background-image: url('../../img/promo-image.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top;
+  }
 }
 
 .promo__title {
@@ -24,10 +37,4 @@
 
 .promo__button {
   margin-right: 10px;
-}
-
-.promo__image {
-  position: absolute;
-  top: 0px;
-  right: -28px;
 }
