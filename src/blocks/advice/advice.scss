@@ -1,0 +1,72 @@
+.advice {
+  padding: 125px 0 101px;
+  background-color: $light-blue;
+}
+
+.advice__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advice__title {
+  @include h2;
+  margin-bottom: 10px;
+  color: $indigo;
+}
+
+.advice__text {
+  @include text;
+  max-width: 44%;
+  margin-bottom: 45px;
+  text-align: center;
+  color: $grey;
+}
+
+.advice__list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.advice__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 230px;
+  height: auto;
+  padding: 30px 30px 168px;
+  background-color: white;
+  background-size: 230px 138px;
+  background-repeat: no-repeat;
+  background-position: bottom; 
+
+  &--frauds {
+    background-image: url('../../img/frauds.png');
+  }
+
+  &--bailes {
+    background-image: url('../../img/bailes.png');
+  }
+
+  &--drug {
+    background-image: url('../../img/drug.png');
+  }
+
+  &--traffic {
+    background-image: url('../../img/traffic.png');
+  }
+}
+
+.advice__advice-title {
+  @include h3;
+  width: 86%;
+  margin-bottom: 15px;
+  color: $indigo;
+}
+
+.advice__advice-text {
+  @include text;
+  margin-top: auto;
+  color: $grey;
+}
