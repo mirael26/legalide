@@ -1,0 +1,77 @@
+.areas {
+  padding: 100px 0 102px;
+}
+
+.areas__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.areas__title {
+  @include h2;
+  margin-bottom: 10px;
+  color: $indigo;
+}
+
+.areas__text {
+  @include text;
+  max-width: 44%;
+  margin-bottom: 80px;
+  text-align: center;
+  color: $grey;
+}
+
+.areas__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.areas__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 325px;
+  height: 147px;
+  padding: 30px;
+  color: $indigo;
+  background: $light-blue;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+
+  &:nth-child(even) {
+    color: white;
+    background: $dark-blue;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: calc(50% - 26px);
+    width: 53px;
+    height: 53px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--balance::after {
+    background-image: url('../../img/balance-icon.svg');
+  }
+
+  &--auction::after {
+    background-image: url('../../img/auction-icon.svg');
+  }
+
+  &--accept::after {
+    background-image: url('../../img/accept-icon.svg');
+  }
+}
+
+.areas__area-title {
+  @include h3;
+}
