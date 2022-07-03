@@ -1,0 +1,14 @@
+.main-nav {
+  display: flex;
+
+}
+
+.main-nav__link {
+  @include nav-text;
+  margin-right: 23px;
+  color: $grey;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}

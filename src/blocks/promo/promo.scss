@@ -1,0 +1,33 @@
+.promo {
+  position: relative;
+  padding: 154px 0;
+}
+
+.promo__title {
+  @include promo-title-text;
+  display: block;
+  width: 50%;
+  margin-bottom: 35px;
+  color: $indigo;
+}
+
+.promo__text {
+  @include promo-text;
+  width: 376px;
+  margin-bottom: 35px;
+  color: $grey;
+}
+
+.promo__buttons {
+  display: flex;
+}
+
+.promo__button {
+  margin-right: 10px;
+}
+
+.promo__image {
+  position: absolute;
+  top: 0px;
+  right: -28px;
+}

@@ -8,27 +8,33 @@
 
 <body class="body">
   <div id="root">
+    <h1 class="visually-hidden">Главная</h1>
     <div class="header">
-      <div class="header__header">
-        <img src="./img/logo.png" alt="Логотип Legalide">
+      <div class="center-container">
+        <div class="header__header">
+          <img class="header__logo" src="./img/logo.png" alt="Логотип Legalide">
 
-        <nav class="header__nav main-nav">
-          <a class="main-nav__link" href="#">Home</a>
-          <a class="main-nav__link" href="#">Product</a>
-          <a class="main-nav__link" href="#">Pricing</a>
-          <a class="main-nav__link" href="#">Contact</a>
-        </nav>
+          <nav class="header__nav main-nav">
+            <a class="main-nav__link" href="#">Home</a>
+            <a class="main-nav__link" href="#">Product</a>
+            <a class="main-nav__link" href="#">Pricing</a>
+            <a class="main-nav__link" href="#">Contact</a>
+          </nav>
 
-        <button class="header__search-button">Поиск</button>
-        <button class="header__cart-button">Корзина</button>
-      </div>
-      
-      <div class="header__promo promo">
-        <strong class="promo__title"></strong>
-        <p class="promo__text"></p>
-        <div class="promo__buttons">
-          <button class="promo__button button button--rounded button--filled">Get Quote Now</button>
-          <button class="promo__button button button--rounded">Learn More</button>
+          <button class="header__search-button">Поиск</button>
+          <button class="header__cart-button">Корзина</button>
+          <button class="header__navbar-toggler">Открыть меню</button>
+        </div>
+        
+        <div class="header__promo promo">
+          <strong class="promo__title">Help to reclaim your life and freedom</strong>
+          <p class="promo__text">We know how large objects will act, 
+            but things on a small scale.</p>
+          <div class="promo__buttons">
+            <button class="promo__button button button--rounded button--filled">Get Quote Now</button>
+            <button class="promo__button button button--rounded">Learn More</button>
+          </div>
+          <img class="promo__image" src="./img/promo-image.png" alt="фото девушки-юриста">
         </div>
       </div>
     </div>
