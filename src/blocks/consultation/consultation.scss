@@ -1,0 +1,28 @@
+.consultation {
+  background-color: white;
+}
+
+.consultation__wrapper {
+  display: flex;
+  padding: 40px 136px 40px 0;
+}
+
+.consultation__text-block {
+  margin-right: auto;
+}
+
+.consultation__title {
+  @include subscribe-title-text;
+  display: block;
+  margin-bottom: 10px;
+  color: $indigo;
+}
+
+.consultation__text {
+  @include text;
+  color: $grey;
+}
+
+.consultation__button {
+  padding: 15px 40px;
+}

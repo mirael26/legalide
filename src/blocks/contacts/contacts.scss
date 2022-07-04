@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 80px;
+  padding: 80px 0 185px;
   background-color: #F3F3F3;
 }
 
@@ -23,7 +23,6 @@
 .contacts__list {
   display: flex;
   justify-content: center;
-  margin-bottom: 185px;
 }
 
 .contacts__item {
@@ -96,34 +95,4 @@
 
 .contacts__button {
   margin-top: auto;
-}
-
-.contacts__consultation {
-  width: 100%;
-  background-color: white;
-}
-
-.contacts__consultation-wrapper {
-  display: flex;
-  padding: 40px 136px 40px 0;
-}
-
-.contacts__consultation-text-block {
-  margin-right: auto;
-}
-
-.contacts__consultation-title {
-  @include subscribe-title-text;
-  display: block;
-  margin-bottom: 10px;
-  color: $indigo;
-}
-
-.contacts__consultation-text {
-  @include text;
-  color: $grey;
-}
-
-.contacts__consultation-button {
-  padding: 15px 40px;
 }
