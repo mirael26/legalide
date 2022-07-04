@@ -1,6 +1,6 @@
 .footer__info {
   min-width: 100px;
-  padding: 50px 52px;
+  padding: 50px 0 52px;
   background: linear-gradient(270deg, $dark-blue -1.04%, $blue 100%);
 }
 
@@ -8,12 +8,11 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .footer__info-block {
   width: 150px;
-  margin-right: 30px;
 }
 
 .footer__title {
