@@ -1,6 +1,5 @@
 .partners {
   position: relative;
-  padding: 51px 0 20px;
   background-color: #FAFAFA;
 
   &::after {
@@ -38,4 +37,25 @@
 
 .partners__subscribe {
   z-index: 1;
+}
+
+@media (max-width: 1040px) {
+  .partners {
+    padding: 81px 0 0;
+    
+    &::after {
+      display: none;
+    }
+  }
+
+  .partners__list {
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 85px;
+    padding: 0 80px;
+  }
+
+  .partners__logo {
+    width: 152px;
+  }
 }

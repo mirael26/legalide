@@ -12,6 +12,7 @@
 .about__title {
   @include h2;
   margin-bottom: 15px;
+  text-align: center;
   color: $indigo;
 }
 
@@ -63,6 +64,7 @@
 
 .about__info-title {
   @include h2;
+  display: inline-block;
   margin-bottom: 10px;
   color: $indigo;
 }
@@ -104,4 +106,37 @@
 .about__item-text {
   @include strong-text;
   color: $grey;
+}
+
+@media (max-width: 1040px) {
+  .about {
+    padding: 100px 40px 235px;
+  }
+
+  .about__text {
+    max-width: 75%;
+  }
+
+  .about__video-wrapper {
+    display: block;
+    width: auto;
+  }
+
+  .about__video {
+    position: relative;
+    width: auto;
+    height: 442px;
+    margin-bottom: 72px;
+  }
+
+  .about__video-mock {
+    width: auto;
+    height: 442px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about__info-title {
+    margin-bottom: 10px;
+  }
 }

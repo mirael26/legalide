@@ -1,11 +1,10 @@
 .consultation {
-  background-color: white;
+  background-color: #FAFAFA;
+  padding: 40px 0 40px;
 }
 
 .consultation__wrapper {
   display: flex;
-  padding: 40px 136px 40px 0;
-  margin-left: 20px;
 }
 
 .consultation__text-block {
@@ -26,4 +25,26 @@
 
 .consultation__button {
   padding: 15px 40px;
+  margin-right: 136px;
+}
+
+@media (max-width: 1040px) {
+  .consultation {
+    padding: 40px 90px;
+  };
+
+  .consultation__wrapper {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .consultation__text-block {
+    margin: 0 0 50px;
+  }
+
+  .consultation__button {
+    align-self: center;
+    margin: 0;
+  }
 }

@@ -12,6 +12,7 @@
 .areas__title {
   @include h2;
   margin-bottom: 10px;
+  text-align: center;
   color: $indigo;
 }
 
@@ -75,4 +76,22 @@
 
 .areas__area-title {
   @include h3;
+}
+
+@media (max-width: 1040px) {
+  .areas {
+    padding: 145px 44px 99px;
+  }
+
+  .areas__text {
+    max-width: 70%;
+    margin-bottom: 75px;
+  }
+
+  .areas__list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 30px;
+  }
 }

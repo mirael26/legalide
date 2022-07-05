@@ -64,7 +64,7 @@
 
 .footer__rights {
   padding: 25px 0;
-  background-color: white;
+  background-color: #FAFAFA;
 }
 
 .footer__rights-wrapper {
@@ -109,5 +109,29 @@
 
   &--youtube {
     background-image: url('../../img/youtube-icon.svg');
+  }
+}
+
+@media (max-width: 1040px) {
+  .footer__info {
+    padding: 55px 88px;
+  }
+
+  .footer__info-wrapper {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .footer__rights {
+    padding: 25px 90px 113px;
+  }
+
+  .footer__rights-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__rights-text {
+    margin: 0 0 50px;
   }
 }

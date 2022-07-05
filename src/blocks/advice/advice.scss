@@ -11,7 +11,8 @@
 
 .advice__title {
   @include h2;
-  margin-bottom: 10px;
+  margin-bottom: 10px;  
+  text-align: center;
   color: $indigo;
 }
 
@@ -69,4 +70,22 @@
   @include text;
   margin-top: auto;
   color: $grey;
+}
+
+@media (max-width: 1040px) {
+  .advice {
+    padding: 98px 90px 192px;
+  }
+
+  .advice__list {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .advice__text {
+    max-width: 100%;
+    margin-bottom: 45px;
+  }
 }
